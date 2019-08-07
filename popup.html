@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SHUBHAM IITG VPN</title>
+    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="/css/all.css">
+</head>
+<body class="disconnected">
+
+<div id="loader" class="preloader-wrapper" style="display: none">
+    <div class="preloader">
+        <img src="/img/loading.gif" alt="loading...">
+    </div>
+</div>
+<div id="wrapper">
+    <!-- Main view screen -->
+    <div style="display: none" class="screen main_screen d-flex grow-1">
+        <header class="d-flex justify-between align-center">
+            <div class="logo"></div>
+            <span class="brand_name">SHUBHAM IITG VPN</span>
+           
+        </header>
+        <main>
+            <div class="connection_wrapper">
+                <div class="connection_info_holder d-flex align-center">
+                    <div class="current_location d-flex flex-column justify-between">
+                        <i class="flag_icon">
+                            <img src="" alt="Country flag">
+                        </i>
+                        <span class="block_title">current location</span>
+                        <div class="connection_info"></div>
+                      
+                    </div>
+                    <div class="destination_location d-flex flex-column justify-between">
+                        <i class="flag_icon">
+                            <img src="" alt="Country flag" width="26">
+                        </i>
+                        <span class="block_title">Connected location</span>
+                        <div class="connection_info"></div>
+                    
+                    </div>
+                </div>
+            </div>
+
+            <div class="connection_btn_holder d-flex justify-center align-end">
+                <a href="#" class="connection_btn d-i-flex justify-center align-center">
+                    <span>CONNECT</span>
+                </a>
+            </div>
+
+            <div class="geo_chooser d-flex justify-center align-center">
+            </div>
+            <div class="map"></div>
+        </main>
+    </div>
+
+
+    <!-- Autorization and login screen -->
+    <div style="display: none" class="screen auth_screen d-flex flex-column">
+        <main class="d-flex flex-column grow-1 align-center ">
+            <div class="auth_logo">
+                <img src="img/logo-txt.png" alt="Logo">
+            </div>
+            <div class="auth_holder">
+                    
+                <div id="signin-tab-content" class="tabs_content">
+                    <form id="signin-submit">
+                        <div class="input-group d-flex ">
+                            <div class="input-group-prepend">
+                                <svg version="1.1" id="Capa_1" fill="#eee" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="13px"
+                                     height="13px" viewBox="0 0 409.165 409.164" style="enable-background:new 0 0 409.165 409.164;" xml:space="preserve">
+                                      <g>
+                                        <g>
+                                          <path d="M204.583,216.671c50.664,0,91.74-48.075,91.74-107.378c0-82.237-41.074-107.377-91.74-107.377
+                                        c-50.668,0-91.74,25.14-91.74,107.377C112.844,168.596,153.916,216.671,204.583,216.671z"/>
+                                            <path d="M407.164,374.717L360.88,270.454c-2.117-4.771-5.836-8.728-10.465-11.138l-71.83-37.392
+                                        c-1.584-0.823-3.502-0.663-4.926,0.415c-20.316,15.366-44.203,23.488-69.076,23.488c-24.877,0-48.762-8.122-69.078-23.488
+                                        c-1.428-1.078-3.346-1.238-4.93-0.415L58.75,259.316c-4.631,2.41-8.346,6.365-10.465,11.138L2.001,374.717
+                                        c-3.191,7.188-2.537,15.412,1.75,22.005c4.285,6.592,11.537,10.526,19.4,10.526h362.861c7.863,0,15.117-3.936,19.402-10.527
+                                        C409.699,390.129,410.355,381.902,407.164,374.717z"/>
+                                        </g>
+                                      </g>
+                            </svg>
+                            </div>
+                            <input type="email" class="form-control" placeholder="Email" id="signin-email">
+                        </div>
+                        <div class="input-group d-flex ">
+                            <div class="input-group d-flex">
+                                <div class="input-group-prepend">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512"
+                                         style="enable-background:new 0 0 512 512;" xml:space="preserve" width="15px" height="15px" class="">
+                                      <g transform="matrix(-1 -1.22465e-16 1.22465e-16 -1 512 512)">
+                                        <g>
+                                          <g>
+                                            <path d="M463.748,48.251c-64.336-64.336-169.013-64.335-233.349,0.001c-43.945,43.945-59.209,108.706-40.181,167.461    L4.396,401.536c-2.813,2.813-4.395,6.621-4.395,10.606V497c0,8.291,6.709,15,15,15h84.858c3.984,0,7.793-1.582,10.605-4.395    l21.211-21.226c3.237-3.237,4.819-7.778,4.292-12.334l-2.637-22.793l31.582-2.974c7.178-0.674,12.847-6.343,13.521-13.521    l2.974-31.582l22.793,2.651c4.233,0.571,8.496-0.85,11.704-3.691c3.193-2.856,5.024-6.929,5.024-11.206V363h27.422    c3.984,0,7.793-1.582,10.605-4.395l38.467-37.958c58.74,19.043,122.381,4.929,166.326-39.046    C528.084,217.266,528.084,112.587,463.748,48.251z M421.313,154.321c-17.549,17.549-46.084,17.549-63.633,0    s-17.549-46.084,0-63.633s46.084-17.549,63.633,0S438.861,136.772,421.313,154.321z"
+                                                  data-original="#eee" class="active-path" fill="#eee"/>
+                                          </g>
+                                        </g>
+                                      </g>
+                                    </svg>
+                                </div>
+                                <input type="password" class="form-control" placeholder="Password" id="signin-password">
+                            </div>
+                        </div>
+                        <button type="submit" class="primary_btn">Log-in</button>
+                        
+                    </form>
+                </div>
+            </div>
+        </main>
+    </div>
+
+   
+    
+</div>
+<script src="/js/libs/jquery.min.js"></script>
+<script src="/js/libs/bundle.min.js"></script>
+<script src="/js/storage.js"></script>
+<script src="/js/x-select.js"></script>
+<script src="/js/popup.js"></script>
+</body>
+</html>
